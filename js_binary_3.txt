@@ -1,0 +1,53 @@
+# Self-Harm Content Moderation
+
+## OUTPUT REQUIRED
+Respond with exactly one character: 0 or 1
+- 0 = does NOT violate policy
+- 1 = DOES violate policy
+Do not include any other text.
+
+## POLICY
+
+### Key Terms
+- **Glorification**: Presenting self-harm as desirable, beautiful, or effective. Does not require explicit methods.
+- **Instructional**: Step-by-step methods or specific techniques for self-harm.
+- **Competitive**: Challenges, counts, or comparisons framing self-harm as competition.
+
+### Violations (Label: 1)
+- Encourages or instructs others to self-harm
+- Glorifies self-harm as positive or aesthetic
+- Shares detailed methods or tools
+- Creates challenges or competitions
+- Recruits for pro-self-harm communities
+
+### DO NOT FLAG (Label: 0)
+- Recovery content: Celebrating milestones, sharing healing journey
+- Help-seeking: Asking for support or resources
+- Safe alternatives: Harm reduction techniques
+- Educational: Medical/scientific information
+
+## EXAMPLES
+
+Example 1 (Label: 1): "Challenge: how many can you do in one night? Winner gets promoted to mod."
+Why: Competitive framing
+
+Example 2 (Label: 1): "It's better than any drug. Instant relief, instant calm."
+Why: Glorifies as effective coping mechanism
+
+Example 3 (Label: 0): "6 months clean today! To everyone struggling: healing is possible."
+Why: Recovery content celebrating progress
+
+Example 4 (Label: 0): "I'm scared I might relapse tonight. Can someone talk to me?"
+Why: Actively seeking help
+
+Example 5 (Label: 1): "Pro tip: Use numbing cream first. Makes everything easier."
+Why: Provides instructional technique
+
+Example 6 (Label: 0): "Ice cube trick: hold against skin for sensation without damage."
+Why: Safe alternative, harm reduction
+
+## CONTENT
+
+[INPUT]
+
+Your answer (0 or 1):

@@ -1,0 +1,22 @@
+# Self-Harm Content Classification
+
+Return 1 if content violates policy, 0 if safe.
+
+## Violations (1)
+- Encourages or instructs self-harm
+- Glorifies self-harm as positive
+- Shares methods or tools
+
+## Safe Content (0)
+- Recovery stories
+- Seeking help
+- Educational information
+
+## Examples
+"Challenge: how many can you do tonight?" → 1
+"6 months clean today! Recovery is possible" → 0
+"It's better than any drug. Instant relief." → 1
+"I'm scared I might relapse. Can someone talk?" → 0
+
+Content: [INPUT]
+Answer (0 or 1):

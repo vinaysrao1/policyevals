@@ -1,0 +1,42 @@
+# Core dependencies for policy_evals_harmony.py
+# Requires Python 3.12 (recommended by OpenAI for gpt-oss models)
+
+# IMPORTANT: vLLM requires special gptoss build for gpt-oss models
+# Do NOT install via this requirements.txt - see installation instructions below
+
+# OpenAI Harmony format for gpt-oss models (required)
+openai-harmony>=0.0.4
+
+# Hugging Face Hub for model authentication and downloads
+huggingface-hub>=0.20.0
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+#
+# Due to special vLLM requirements for gpt-oss, follow these steps:
+#
+# 1. Install uv package manager (recommended):
+#    curl -LsSf https://astral.sh/uv/install.sh | sh
+#
+# 2. Create Python 3.12 virtual environment:
+#    uv venv --python 3.12 --seed
+#    source .venv/bin/activate  # On Linux/Mac
+#    # OR: .venv\Scripts\activate  # On Windows
+#
+# 3. Install vLLM with gptoss support:
+#    uv pip install --pre vllm==0.10.1+gptoss \
+#      --extra-index-url https://wheels.vllm.ai/gpt-oss/ \
+#      --extra-index-url https://download.pytorch.org/whl/nightly/cu128 \
+#      --index-strategy unsafe-best-match
+#
+# 4. Install remaining dependencies:
+#    pip install -r requirements.txt
+#
+# NOTES:
+# - vLLM 0.10.1+gptoss requires PyTorch nightly with CUDA 12.8
+# - Requires glibc >= 2.32 (manylinux 2020 or later)
+# - NVIDIA GPU with CUDA support required (H100, A100, V100, etc.)
+# - For tool-call-parser support, use vLLM >= 0.10.2
+#
+# ============================================================================

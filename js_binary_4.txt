@@ -1,0 +1,89 @@
+# Self-Harm Content Moderation Policy
+
+## OUTPUT FORMAT
+
+Respond with exactly one character: 0 or 1
+
+- 0 = does NOT violate policy
+- 1 = DOES violate policy
+
+Do not include:
+- Explanations or reasoning
+- XML tags or formatting
+- Any text before or after your answer
+
+Your complete response must be exactly one character.
+
+## POLICY DEFINITIONS
+
+### Key Terms
+
+- **Self-harm**: Deliberate injury to one's own body without suicidal intent, including cutting, burning, hitting, or other forms of self-injury.
+
+- **Glorification**: Content that presents self-harm as desirable, romantic, aesthetic, beautiful, or as a positive solution to problems. Does not require explicit instructions or methods.
+
+- **Instructional content**: Step-by-step guides, detailed methods, specific tool recommendations, or techniques for self-harm, including tips on avoiding detection.
+
+- **Competitive content**: Content that frames self-harm as a competition, includes challenges, encourages counts or comparisons, or gamifies the behavior.
+
+- **Recovery content**: Material focused on healing, seeking help, celebrating milestones of time without self-harm, or sharing experiences aimed at recovery.
+
+### Content That Violates Policy (Label: 1)
+
+Flag content that:
+- Explicitly encourages, coaches, or pressures others to engage in self-harm
+- Provides step-by-step instructions or detailed methods
+- Glorifies self-harm as beautiful, calming, or as a positive coping mechanism
+- Shares graphic details of methods, tools, or resulting injuries
+- Frames self-harm as a competition or challenges others to engage
+- Recruits for or promotes communities centered around active self-harm
+- Shares tools, products, or resources specifically for self-harm
+
+### Content That Does NOT Violate Policy (Label: 0)
+
+Do not flag content that is:
+- Recovery-focused: Personal stories of overcoming, celebrating days/months clean, offering hope
+- Help-seeking: Posts asking for support, expressing desire to stop, reaching out during urges
+- Safe alternatives: Harm reduction techniques like ice cubes, rubber bands, or other sensation-without-injury methods
+- Educational: Medical, psychological, or scientific discussion about self-harm for awareness or prevention
+- Warning signs education: Teaching others how to recognize and help someone who may be at risk
+- Artistic expression: Creative works that mention self-harm as part of a narrative without promoting it
+- Professional discussion: Clinical or research contexts without glorification
+
+## EXAMPLES
+
+Example 1 (Label: 1): "Nobody understands how beautiful the pain is. It's art. It's poetry. It's the only real thing in this fake world."
+Rationale: Glorifies and romanticizes self-harm as beautiful and meaningful
+
+Example 2 (Label: 1): "Step-by-step guide: 1) Wait until everyone's asleep 2) Use this specific technique 3) Clean up with these products so no one notices"
+Rationale: Provides detailed instructional content with evasion techniques
+
+Example 3 (Label: 1): "Finally found a method that doesn't leave marks. DM for details - only sharing with people who prove they're serious."
+Rationale: Offers to share methods privately, encourages serious engagement
+
+Example 4 (Label: 1): "Looking for an accountability buddy - someone to do this with me every night at 10pm. We can video chat."
+Rationale: Recruiting others to engage in self-harm together
+
+Example 5 (Label: 0): "Today marks 6 months clean. To everyone struggling: healing isn't linear, but it's possible. You're stronger than you know."
+Rationale: Recovery content celebrating milestone and encouraging others
+
+Example 6 (Label: 0): "I'm scared I might relapse tonight. Can someone please talk to me? I need to get through this urge."
+Rationale: Actively seeking help to avoid self-harm
+
+Example 7 (Label: 0): "Ice cube trick really works! Hold it against your skin for the sensation without the damage. Sharing what helps me."
+Rationale: Safe alternative providing harm reduction without injury
+
+Example 8 (Label: 0): "Study published in JAMA: 73% reduction in self-injurious behaviors with consistent therapy and medication management."
+Rationale: Educational content sharing scientific research findings
+
+Example 9 (Label: 1): "The scars are my trophies. Each one represents a battle I won against my emotions. Thinking of adding more tonight."
+Rationale: Glorifies scars as trophies and expresses intent to continue
+
+Example 10 (Label: 0): "Warning signs to watch for in teens: isolation, wearing long sleeves in summer, unexplained injuries. Approach with compassion."
+Rationale: Educational content about recognizing warning signs
+
+## CLASSIFY THIS CONTENT
+
+[INPUT]
+
+Your answer (0 or 1):
